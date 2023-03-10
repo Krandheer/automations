@@ -20,10 +20,10 @@ def organise_file():
             move(base_dir, images_dir, files)
 
         elif file_extension in ["epub", "pdf"]:
-            pdf_dir = os.path.join(base_dir, f"{file_extension}s")
-            if not os.path.isdir(pdf_dir):
-                os.makedirs(pdf_dir)
-            move(base_dir, pdf_dir, files)
+            books_and_docs = os.path.join(base_dir, f"{file_extension}s")
+            if not os.path.isdir(books_and_docs):
+                os.makedirs(books_and_docs)
+            move(base_dir, books_and_docs, files)
 
         elif file_extension == "mp4":
             videos_dir = os.path.join(base_dir, "videos")
