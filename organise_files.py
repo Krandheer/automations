@@ -10,7 +10,7 @@ def move(root_dir, destination_dir, file):
 
 
 def organise_file():
-    images = ['jpeg', 'jpg', 'png']
+    images = ["jpeg", "jpg", "png"]
     for files in os.listdir(base_dir):
         file_extension = files.split(".")[-1]
         if file_extension in images:
