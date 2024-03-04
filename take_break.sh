@@ -1,12 +1,4 @@
 #!/bin/bash
 #!/bin/bash
-
-# Put the Mac to sleep
-pmset sleepnow
-
-# Sleep for 25 seconds
-sleep 10
-
-# Wake the Mac up
-pmset schedule wake "now"
-
+url="https://www.youtube.com/watch?v=55E2pA435G8&ab_channel=Programmer%27sMusic"
+open "$url"
