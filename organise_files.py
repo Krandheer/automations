@@ -4,12 +4,18 @@ base_dir = os.path.join(os.path.expanduser("~"), "downloads")
 
 
 def move(root_dir, destination_dir, file):
+    """
+    move files from using rename function
+    """
     source = os.path.join(root_dir, file)
     destination = os.path.join(destination_dir, file)
     os.rename(source, destination)
 
 
 def organise_file():
+    """
+    find the file to be moved/organised
+    """
     images = ["jpeg", "jpg", "png"]
     for files in os.listdir(base_dir):
         file_extension = files.split(".")[-1]
