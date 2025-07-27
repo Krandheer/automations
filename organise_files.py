@@ -5,7 +5,7 @@ base_dir = os.path.join(os.path.expanduser("~"), "downloads")
 
 def move(root_dir, destination_dir, file):
     """
-    move files from using rename function
+    move files from source to destination using rename function
     """
     source = os.path.join(root_dir, file)
     destination = os.path.join(destination_dir, file)
